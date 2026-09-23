@@ -2,6 +2,30 @@
 
 Northstar POS is a four-page CodeIgniter 4 application created for IT0049 Technical Formative Assessment 1. It demonstrates routing, controllers, views, shared layouts, and passing static array data to listing pages before database integration.
 
+## Live website
+
+[Open the deployed Northstar POS website](https://mbdeleon-Tech.github.io/IT0049-Technical-Fomative-Assessment-1-Module-1/)
+
+GitHub Pages serves a static export generated from the same CodeIgniter views. The complete PHP application source remains on the `main` branch.
+
+## Screenshots
+
+### Landing page
+
+![Northstar POS landing page](public/screenshots/home.png)
+
+### About page
+
+![Northstar POS about page](public/screenshots/about.png)
+
+### Customer accounts
+
+![Northstar POS customer accounts page](public/screenshots/customers.png)
+
+### User accounts
+
+![Northstar POS user accounts page](public/screenshots/users.png)
+
 ## Pages
 
 - `/` - landing page and system overview
@@ -22,6 +46,10 @@ Northstar POS is a four-page CodeIgniter 4 application created for IT0049 Techni
 4. Confirm that `.env` contains `CI_ENVIRONMENT = development` and `app.baseURL = 'http://localhost:8080/'`.
 5. Run `php spark serve`.
 6. Open `http://localhost:8080` in a browser.
+
+## Static deployment
+
+With the local CodeIgniter server running, execute `powershell -ExecutionPolicy Bypass -File scripts/export-static.ps1`. The generated `docs` folder is the GitHub Pages deployment source.
 
 ## Project structure
 
